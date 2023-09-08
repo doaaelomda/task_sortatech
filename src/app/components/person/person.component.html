@@ -1,0 +1,78 @@
+<div class="wrapper">
+    <nav class="nav" style="flex: 1;">
+        <div class="left" style="display: inline-block;justify-content: space-between;">
+            <p
+                style="margin-top: 15px;margin-left: 10px;color: #92A1AD; font-size: 14px; font-family: Times New Roman; font-weight: 400; line-height: 24px; word-wrap: break-word">
+                المورد متاح إلى</p>
+           
+            <input style="margin-left: 10px;width: 85px; background-color: #ECF1F6; border-radius: none; border: 0px #D9D9D9 solid;  font-size: 14px; font-family: Times New Roman; font-weight: 400; line-height: 24px; word-wrap: break-word" type="time">
+            <span style="background-color: transparent;margin-right:20px;color: #1C1C28; font-size: 14px; font-family: Times New Roman; font-weight: 400; line-height: 24px; word-wrap: break-word">شهر</span>
+            
+            <input type="number" style="width: 75%;color: #1C1C28; font-size: 16px; font-family: Poppins; font-weight: 500; line-height: 24px; word-wrap: break-word;background: #F6F2F2; border-radius: 9px; border: 0.50px #D9D9D9 solid" value="3">
+            <p
+                style="color: #92A1AD; font-size: 15px; font-family: Times New Roman; font-weight: 400; line-height: 24px; word-wrap: break-word">
+                وقت المورد</p>
+            <div style="display: flex;justify-content: center;background-color: transparent;align-items: center;">
+                <input id="numberInput"
+                    style="align-items: center;width: 50%; color: #1C1C28; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 28px; word-wrap: break-word; color: #1C1C28; font-size: 14px; font-family: Times New Roman; font-weight: 400; line-height: 28px; word-wrap: break-word; background: #F6F2F2; border-radius: 9px; border: 0.50px #D9D9D9 solid"
+                    type="number"  value="30">
+                <div class="radio" style="display: flex; justify-content: flex-start;">
+                    <p>وقت الخدمة</p>
+                    <i style="background-color: transparent" class="bi bi-box"></i>
+                    <input type="radio" value="1" name="booking-option" />
+                </div>
+                <div class="radio" style="display: flex; justify-content: flex-start;">
+                    <p>الوقت ثابت</p>
+                    <i style="background-color: transparent" class="bi bi-clock"></i>
+                    <input type="radio" value="2" name="booking-option" />
+                </div>
+            </div>
+            <i style="background-color: transparent" class="bi bi-info-circle"></i>
+            <p
+                style=" display: inline-block;color: #92A1AD; font-size: 15px; font-family: Times New Roman; font-weight: 400; line-height: 24px; word-wrap: break-word">
+                الحجز المتعدد</p>
+            <div style="display: flex;justify-content: center;background-color: transparent;align-items: center;">
+                <input id="numberInput"
+                    style="width: 50%; line-height: 28px; word-wrap: break-word; color: #1C1C28; font-size: 14px; font-family: Times New Roman; font-weight: 400; line-height: 28px; word-wrap: break-word; background: #F6F2F2; border-radius: 9px; border: 0.50px #D9D9D9 solid"
+                    type="date" placeholder="موعد">
+                <div class="radio" style="display: flex; justify-content: flex-start;">
+                    <p>حجز اكثر من شخص لنفس الموعد</p>
+                    <i style="background-color: transparent" class="bi bi-person"></i>
+                    <i style="background-color: transparent" class="bi bi-person"></i>
+                    <input type="radio" value="2" name="booking-option" />
+                </div>
+                <div class="radio" style="display: flex; justify-content: flex-start;">
+                    <p>حجز واحد فقط</p>
+                    <i style="background-color: transparent" class="bi bi-person"></i>
+                    <input type="radio" value="1" name="booking-option" />
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="nav justify-content-end" style="flex: 1;">
+        <div class="dic">
+            <input
+                style="border: 0.50px #B2A6A6 solid;align-items:center;margin-top: 40px;margin-bottom:10px;margin-left:10px;color: #1C1C28; font-size: 16px; font-family: 'Times New Roman'; font-weight: 700; line-height: 24px; word-wrap: break-word;"
+                value="هيثم سعيد">
+            <h5 style="background-color: transparent;margin: 10px;">اسم الموارد</h5>
+
+            <input style="position: relative;left:50px;margin-top:10px;width: 5px;height:5px;background: #0771DE; border-radius: 9999px" type="file" accept="image/*" (change)="handleFileInput($event)" class="bi bi-file-earmark-image">
+            <img align="right" style="margin-top: 10px;margin-left: 15px;width: 130px; height: 120px;" type="image" (click)="changeImage()" (change)="handleImageChange($event)" [src]="personImage" src="../../../assets/Image-100.png">
+      
+        </div>
+        <div class=" day">
+            <div class="radio">
+                <p><span style="font-weight: normal; background-color: transparent">(أكثر من يوم)</span>حجز مدة</p>
+                <input type="radio" value="1" name="booking-option" />
+            </div>
+            <div class="radio">
+                <p>حجز خلال اليوم</p>
+                <input type="radio" value="2" name="booking-option" />
+            </div>
+            <div class="radio">
+                <p>اختر نوع الموارد</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+div,.container{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    align-items: center;
+    background-color: transparent;
+    background: #FBFBFB;
+    border-radius: 12px;
+    position: relative;
+    right: 50px;
+    
+}
+p{
+    color: #1C1C28; font-size: 20px;
+    font-family: Times New Roman;
+    font-weight: 400;
+    line-height: 24px; word-wrap: break-word;
+    background-color: transparent
+}
+i.bi.bi-plus-lg{
+    color:#8F9BBA;
+    width: 60px;
+    height: 30px;
+}
+body{
+    align-items: center;
+    align-content: center;
+    background: #FBFBFB;
+}
+
+
